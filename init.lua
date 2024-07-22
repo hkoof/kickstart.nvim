@@ -253,6 +253,21 @@ require('lazy').setup({
     },
   },
 
+  {
+    'maxmx03/solarized.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.o.background = 'dark' -- or 'light'
+
+      -- vim.cmd.colorscheme 'solarized'
+    end,
+  },
+
+  'rebelot/kanagawa.nvim',
+  'joshdick/onedark.vim',
+  'romainl/Apprentice',
+
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
@@ -787,6 +802,7 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
+      -- vim.cmd.colorscheme 'tokyonight-night'
       vim.cmd.colorscheme 'tokyonight-night'
 
       -- You can configure highlights by doing something like:
